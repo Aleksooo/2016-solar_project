@@ -113,6 +113,8 @@ def update_object_position(space, body):
     if x + r < 0 or x - r > window_width or y + r < 0 or y - r > window_height:
         space.coords(body.image, window_width + r, window_height + r,
                      window_width + 2*r, window_height + 2*r)  # положить за пределы окна
+    print(x, y, r)
+    print(body.image)
     space.coords(body.image, x - r, y - r, x + r, y + r)
 
 
