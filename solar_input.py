@@ -81,7 +81,7 @@ def parse_planet_parameters(line, planet):
     planet.color = dat[2]
     planet.m = float(dat[3])
     planet.x = float(dat[4])
-    plsnet.y = float(dat[5])
+    planet.y = float(dat[5])
     planet.Vx = float(dat[6])
     planet.Vy = float(dat[7])
 
